@@ -2,7 +2,7 @@ let notes = getSavedNotes();
 
 const filters = {
     searchText: '',
-    sortyBy:'byEdited'
+    sortBy:'byEdited'
 }
 
 renderNotes(notes,filters);
@@ -33,7 +33,7 @@ document.querySelector('#search').addEventListener('input', function(e){
 });
 
 document.querySelector('#filter-by').addEventListener('change',function(e){
-    filters.sortyBy = e.target.value;
+    filters.sortBy = e.target.value;
     renderNotes(notes,filters);
 });
 
